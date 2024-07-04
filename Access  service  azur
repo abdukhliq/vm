@@ -1,0 +1,1 @@
+IPADDRESS="$(az vm list-ip-addresses --resource-group "[sandbox resource group name]" --name my-vm --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" --output tsv)"
